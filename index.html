@@ -12,10 +12,35 @@
     
 </head>
 <body>
-   <h1> hello DRAGON</h1>
-    <i class="fas fa-paint-brush brush"></i>
+    <div class="wrapper">
+        <p class="info">
+            <i class="fas fa-paint-brush brush"></i>
+        </p>
+        <h1>Stoper</h1>
+        <p class="stopwatch">0:00</p>
+        <p class="time">0:00</p>
 
-   
+        <div class="buttons">
+            <button class="start"><i class="fas fa-play"></i></button>
+            <button class="pause"><i class="fas fa-pause"></i></button>
+            <button class="stop"><i class="fas fa-stop"></i></button>
+            <button class="reset"><i class="fas fa-times"></i></button>
+            <button class="archiwum">archiwum</button>
+        </div>
+        <ul class="time-list"></ul>
+    </div>
+    <div class="shadow-modal">
+        <div class="modal">
+            <h3>instrukcja</h3>
+            <p><i class="fas fa-play"></i>start</p>
+            <p><i class="fas fa-pause"></i>pausa</p>
+            <p><i class="fas fa-stop"></i>stop</p>
+            <p><i class="fas fa-times"></i>resetuj</p>
+            <p><strong>archiwum</strong>zobacz poprzednie czasy</p>
+            <button class="close">zamknij</button>
+        </div>
+    </div>
+
    <script src="./script.js"></script>
 </body>
 </html>
