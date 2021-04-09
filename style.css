@@ -1,10 +1,14 @@
-/*
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+    border: 1px solid red;
 
+}
+:root{
+    --first-color:#FA1406;
+    --second-color:#D2C7BE;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     display: flex;
@@ -14,8 +18,63 @@ body{
     min-height: 100vh;
     background-color: #333;
 }
-
-h1, .brush{
-    color:green;
- }
- */
+.wrapper{
+    background: radial-gradient(circle, rgb(50,50,50), rgb(25,25,25,90%));
+    width: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #000;
+    position: relative;
+}
+.info{
+    position: absolute;
+    right: 15px;
+    top:20px;
+    font-size: 20px;
+    color: var(--second-color);
+    padding: 15px;
+    cursor: pointer;
+    transition: color 0.42s;
+}
+.info:hover{
+    color: var(--first-color);
+}
+h1{
+    font-weight: lighter;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.stopwatch{
+    font-size: 72px;
+    color: var(--first-color);
+}
+.time{
+    visibility: hidden;
+    font-size: 22px;
+}
+.buttons{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content:space-around;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    width: 400px;
+    /* height: 100px; */
+    margin: 30px;
+   
+   
+}
+button{
+    background-color: transparent;
+    color: #fff;
+    border-color: var(--second-color);
+    /* width: 30px; */
+    /* height: 30px; */
+    margin: 20px;
+    padding: 10px 20px;
+}
